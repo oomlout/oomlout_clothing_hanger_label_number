@@ -89,8 +89,8 @@ def make_scad(**kwargs):
                 
         #defaults
         kwargs["size"] = "oobb"
-        kwargs["width"] = 1
-        kwargs["height"] = 1
+        kwargs["width"] = 2
+        kwargs["height"] = 7
         kwargs["thickness"] = 3
         #oomp_bits
         if oomp_mode == "project":
@@ -120,9 +120,9 @@ def make_scad(**kwargs):
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        p3["width"] = 3
-        p3["height"] = 3
-        #p3["thickness"] = 6
+        p3["width"] = 1
+        p3["height"] = 1
+        p3["thickness"] = 1.5
         #p3["extra"] = ""
         part["kwargs"] = p3
         nam = "base"
@@ -131,7 +131,7 @@ def make_scad(**kwargs):
             p3["oomp_size"] = nam
         if not test:
             pass
-            #parts.append(part)
+            parts.append(part)
 
 
     kwargs["parts"] = parts
@@ -165,12 +165,28 @@ def get_base(thing, **kwargs):
     p3["type"] = "positive"
     p3["shape"] = f"oobb_plate"    
     p3["depth"] = depth
+    p3["width"] = 2
+    p3["height"] = 4
     #p3["holes"] = True         uncomment to include default holes
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)
     
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "negative"
+    p3["shape"] = f"oobb_plate"    
+    p3["depth"] = depth
+    p3["width"] = 1
+    p3["height"] = 2
+    #p3["holes"] = True         uncomment to include default holes
+    #p3["m"] = "#"
+    pos1 = copy.deepcopy(pos)         
+    pos1[1] += 7.5
+    p3["pos"] = pos1
+    oobb_base.append_full(thing,**p3)
+    
+
     #add holes seperate
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
@@ -181,7 +197,61 @@ def get_base(thing, **kwargs):
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
-    oobb_base.append_full(thing,**p3)
+    #oobb_base.append_full(thing,**p3)
+
+    width_label  = 76.2
+    height_label = 50.8
+
+    #label holder big piece
+    pos_holder = copy.deepcopy(pos)
+    pos_holder[0] += 0
+    pos_holder[1] += -height_label/2 - 40.9
+    pos_holder[2] += 0
+    if True:
+        extra_label_border = 3
+        extra_label_clearance = 1
+        depth_label_inset = 0.5   
+        radius_label = 3/2
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "positive"
+        p3["shape"] = f"rounded_rectangle"
+        wid = width_label + extra_label_border
+        hei = height_label + extra_label_border
+        dep = depth
+        size = [wid, hei, dep]
+        p3["size"] = size
+        p3["radius"] = radius_label + extra_label_border/2
+        p3["depth"] = dep
+        p3["both_holes"] = True
+        p3["holes"] = "left"
+        #p3["m"] = "#"
+        pos1 = copy.deepcopy(pos_holder)
+        pos1[0] += 0
+        pos1[1] += hei/2
+        pos1[2] += 0
+        p3["pos"] = pos1
+        oobb_base.append_full(thing,**p3)
+
+        #inset
+
+        p4 = copy.deepcopy(p3)
+        p4["type"] = "n"
+        wid = width_label + extra_label_clearance
+        hei = height_label + extra_label_clearance
+        dep = depth_label_inset
+        size = [wid, hei, dep]
+        p4["size"] = size
+        rad = radius_label + extra_label_clearance/2
+        p4["radius"] = rad
+        
+        p4["both_holes"] = True
+        p4["holes"] = "left"
+        p4["m"] = "#"
+        pos11 = copy.deepcopy(pos1)
+        pos11[2] += 0#depth - depth_label_inset - dep/2
+        p4["pos"] = pos11        
+        oobb_base.append_full(thing,**p4)
+
 
     if prepare_print:
         #put into a rotation object

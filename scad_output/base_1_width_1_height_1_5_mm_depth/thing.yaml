@@ -1,0 +1,250 @@
+classification: project
+color: oomlout_clothing_hanger_label_number
+description_extra: ''
+description_main: base_1_width_1_height_1_5_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_clothing_hanger_label_number_base_1_width_1_height_1_5_mm_depth
+id_oobb: oobb_part_oomlout_clothing_hanger_label_number_base_1_width_1_height_1_5_mm_depth
+kwargs:
+  filter: ''
+  height: 1
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: oomlout_clothing_hanger_label_number
+  oomp_description_extra: ''
+  oomp_description_main: base_1_width_1_height_1_5_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 1.5
+  typ: all
+  type: oomlout_clothing_hanger_label_number_base
+  width: 1
+manufacturer: ''
+name: base
+part_number: ''
+project_name: C:\gh\oomlout_clothing_hanger_label_number
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 1.5
+      height: 4
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 29
+      - 59
+      - 1.5
+      type: positive
+      width: 2
+  - - depth: 1.5
+      height: 2
+      pos:
+      - 0
+      - 7.5
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 14
+      - 29
+      - 1.5
+      type: negative
+      width: 1
+  - - depth: 1.5
+      height: 1
+      pos:
+      - 0
+      - -39.4
+      - 0
+      r: 3.0
+      shape: rounded_rectangle
+      size:
+      - 79.2
+      - 53.8
+      - 1.5
+      type: positive
+      width: 1
+  - - depth: 1.5
+      height: 1
+      m: '#'
+      pos:
+      - 0
+      - -39.4
+      - 0
+      r: 2.0
+      shape: rounded_rectangle
+      size:
+      - 77.2
+      - 51.8
+      - 0.5
+      type: negative
+      width: 1
+  components_objects:
+  - depth: 1.5
+    filter: ''
+    height: 4
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_clothing_hanger_label_number
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_plate
+    thickness: 1.5
+    typ: all
+    type: positive
+    width: 2
+  - depth: 1.5
+    filter: ''
+    height: 2
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_clothing_hanger_label_number
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 7.5
+    - 0
+    save_type: all
+    shape: oobb_plate
+    thickness: 1.5
+    typ: all
+    type: negative
+    width: 1
+  - both_holes: true
+    depth: 1.5
+    filter: ''
+    height: 1
+    holes: left
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_clothing_hanger_label_number
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - -39.4
+    - 0
+    radius: 3.0
+    save_type: all
+    shape: rounded_rectangle
+    size:
+    - 79.2
+    - 53.8
+    - 1.5
+    thickness: 1.5
+    typ: all
+    type: positive
+    width: 1
+  - both_holes: true
+    depth: 1.5
+    filter: ''
+    height: 1
+    holes: left
+    m: '#'
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_clothing_hanger_label_number
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - -39.4
+    - 0
+    radius: 2.0
+    save_type: all
+    shape: rounded_rectangle
+    size:
+    - 77.2
+    - 51.8
+    - 0.5
+    thickness: 1.5
+    typ: all
+    type: n
+    width: 1
+  components_string:
+  - oobb_plate_shape_positive_type_1.5_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_2_width_4_height_1.5_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_clothing_hanger_label_number_oomp_color
+  - oobb_plate_shape_negative_type_1.5_depth_0_7.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_2_height_1.5_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_clothing_hanger_label_number_oomp_color
+  - rounded_rectangle_shape_positive_type_1.5_depth_0_-39.4_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_1.5_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_clothing_hanger_label_number_oomp_color_79.2_53.8_1.5_size_3.0_radius_true_both_holes_left_holes
+  - rounded_rectangle_shape_n_type_1.5_depth_0_-39.4_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_1.5_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_clothing_hanger_label_number_oomp_color_77.2_51.8_0.5_size_2.0_radius_true_both_holes_left_holes
+  description: oomlout clothing hanger label number base 1x1x1.5
+  description_extra: ''
+  description_main: 1_width_1_height_1_5_mm_depth
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_oomlout_clothing_hanger_label_number_base_1_width_1_height_1_5_mm_depth
+  height: 1
+  height_mm: 14
+  id: oobb_part_oomlout_clothing_hanger_label_number_base_1_width_1_height_1_5_mm_depth
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/oomlout_clothing_hanger_label_number_base/1_width_1_height_1_5_mm_depth/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_oomlout_clothing_hanger_label_number_base_01_01_1d5
+  manufacturer: ''
+  name: Oobb Part Oomlout Clothing Hanger Label Number Base 1 Width 1 Height 1 5 mm
+    Depth
+  name_short: Oomlout Clothing Hanger Label Number
+  part_number: ''
+  short_name: ''
+  size: oomlout_clothing_hanger_label_number_base
+  thickness: 1.5
+  thickness_mm: 1.5
+  type: part
+  width: 1
+  width_mm: 14
+type: github
